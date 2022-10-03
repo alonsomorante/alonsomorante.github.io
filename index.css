@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bungee+Spice&display=swap');
+
+
+body {
+    margin: 0px;
+    background-color: #F8CB2E;
+    font-family: 'Bowlby One SC';
+    color: #FCFFE7;
+}
+
+#titulo {
+    font-size: 30px;
+    color: #000000;
+}
+
+#subtitulo {
+    color: #000000;
+}
+
+#subtitulo-h2 {
+    color: #000000;
+}
+
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa button {
+    border: solid 1px black;
+    width: 90px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #1d484f;
+    color: #FCFFE7;
+    font-family: 'Bowlby One SC';
+    margin: 10px 0px;
+}
+
+#ver-mapa button:hover {
+    background-color: #338996;
+}
+
+#mapa {
+    border: #000000 solid 1px;
+}
+
+#cuadros-mascotas {
+    display: flex;
+    
+}
+
+.cuadro-mascota {
+    display: flex;
+    background-color: #006E7F;
+    width: 175px;
+    height: 90px;
+    margin: 8px;
+    border-radius: 5px;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro-mascota img {
+    width: 85px;
+    height: 85px
+}
+
+#seleccionar-jugador {
+    font-family: 'Bowlby One SC';
+    width: 140px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+#seleccionar-jugador:hover {
+    background-color:#FFFFFF;
+    transform: scale(1.05, 1.05);
+}
+
+#mensaje-seleccion {
+    display: flex;
+}
+
+#foto-jugador-content, #foto-enemigo-content {
+    display: flex;
+    justify-content: center;
+}
+
+#foto-jugador-content img , #foto-enemigo-content img  {
+    width: 65px;
+    height: 65px;
+}
+
+#middle {
+    display: flex;
+    justify-content: space-around;
+}
+
+#split{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#player {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    column-gap: 15px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    justify-items: center;
+}
+
+#player-seleccion {
+    font-size: 20px;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    background-image: linear-gradient(#B22727, #EE5007, #F8CB2E);
+}
+
+
+.botones {
+    border: solid 1px black;
+    width: 120px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #297a86;
+    color: #FCFFE7;
+    font-family: 'Bowlby One SC';  
+}
+
+.botones:hover {
+    background-color: #51aebc;
+    background-color: #213e43
+}
+
+
+#vidas {
+    font-size: 30px;
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: 120px 120px;
+    justify-items: center;
+}
+
+#ataques {
+    display: flex;
+}
+
+#ataques-letras {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensaje-final {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultado-juego {
+    display: flex;
+}
+
+#reiniciar-juego-boton {
+    font-family: 'Bowlby One SC';
+    width: 140px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+#reiniciar-juego-boton:hover {
+    background-color:#FFFFFF;
+    transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 385px) {
+    #cuadros-mascotas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botones-ataque {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #split {
+        grid-template-columns: 25px 1fr 25px;;
+    }
+
+    #vidas {
+        grid-template-columns: 80px 80px;
+        gap: 0px    ;
+    }
+
+    #ataques-letras p {
+        margin: 0px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    #quien-ataca {
+        display: none;
+    }
+
+    #jugador-seleccionado, #enemigo-seleccionado{
+        display: none;
+    }
+
+    #subtitulo {
+        display: none;
+    }
+
+    #ataques-letras #display-game {
+        display: none;
+    }
+    
+
+
+}
+
+@media (max-width: 385px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+input {
+    display: none;
+}
+
+input:checked + label {
+   background-color: #B22727;
+}
+
